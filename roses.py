@@ -8,7 +8,12 @@ with open('roses.txt') as f: # converting each line into a list and picking the 
     lines = f.readlines()
     e = lines[0]
 print(e)
-my_file.write (e)
+my_file.write ( e)
+count = 0
+with open('roses.txt', "r") as f:
+    for line in f:
+        count += 1
+        print(count)
 
 f.close()
 my_file.close()
